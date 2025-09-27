@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Raghav Kumar Jha | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#education">Education</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#services">Services</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section class="home section" id="home">
+    <div class="container">
+      <img src="images/profile.jpg" alt="Profile Picture" />
+      <div class="home-content">
+        <p class="welcome-text">Welcome to my portfolio</p>
+        <h1 class="typing">I am Raghav Kumar Jha</h1>
+        <p>A passionate software engineer and B.Tech CSE student at K.R. Mangalam University.</p>
+        <p>I enjoy creating innovative projects and solving real-world problems using code.</p>
+        <p>"View or download my resume using the buttons below:"
+        <div class="resume-buttons">
+          <a href="resume.pdf" download class="btn-download">Download Resume</a>
+          <a href="resume.pdf" target="_blank" class="btn-view">View Resume</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="education section" id="education">
+    <div class="container">
+      <h2 style="text-align:center; color:#004d61;">Education</h2>
+      <div class="edu-container">
+        <div class="edu-box">10th</div>
+        <div class="edu-box">12th</div>
+        <div class="edu-box">B.Tech</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="skills section" id="skills">
+    <div class="container">
+      <h2 style="text-align:center; color:#0066cc;">Skills</h2>
+      <div class="skill-list">
+        <div class="skill-item">HTML</div>
+        <div class="skill-item">CSS</div>
+        <div class="skill-item">JavaScript</div>
+        <div class="skill-item">React.js</div>
+        <div class="skill-item">Node.js</div>
+        <div class="skill-item">Express.js</div>
+        <div class="skill-item">MongoDB</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="projects section" id="projects">
+    <div class="container">
+      <h2 style="text-align:center; color: #006064;">Projects</h2>
+      <div class="card-list">
+        <div class="card">
+          <h3>AccuLedger</h3>
+          <p>A responsive web-based accounting system built using PHP, MySQL, and HTML/CSS.</p>
+        </div>
+        <div class="card">
+          <h3>E-Canteen System</h3>
+          <p>A web-based canteen food ordering platform that replaces manual queues and supports online orders.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="services section" id="services">
+    <div class="container">
+      <h2 style="text-align:center; color: #33691e;">Services</h2>
+      <div class="card-list">
+        <div class="card">
+          <h3>Web Development</h3>
+          <p>Designing and developing responsive, user-friendly websites and dashboards.</p>
+        </div>
+        <div class="card">
+          <h3>Cybersecurity</h3>
+          <p>Helping organizations with network defense and penetration testing basics.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="about section" id="about">
+    <div class="container">
+      <h2 style="text-align:center; color: #6a1b9a;">About Me</h2>
+      <p style="max-width: 800px; margin: 1rem auto; font-size: 1.1rem; text-align: center; color: #4a148c;">
+        I am a tech enthusiast with a deep interest in software engineering, system analysis, and cybersecurity.
+        I’ve worked on impactful projects like AccuLedger and conducted a case study on Infosys’ software strategies.
+      </p>
+    </div>
+  </section>
+
+<section id="contact">
+  <h2>Contact Me</h2>
+  <form id="contactForm">
+    <input type="text" name="name" placeholder="Your Name" required />
+    <input type="email" name="email" placeholder="Your Email" required />
+    <textarea name="message" placeholder="Your Message" required></textarea>
+    <button type="submit">Send Message</button>
+  </form>
+
+  <!-- Gmail and LinkedIn links -->
+  <div class="contact-links">
+    <a href="mailto:raghavjha0710@gmail.com" target="_blank">
+      <img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" alt="Email Icon" />
+      raghavjha0710@gmail.com
+    </a>
+
+    <a href="https://www.linkedin.com/in/raghav-k-a75586290/" target="_blank">
+      <img src="images/Linkedin.png" alt="LinkedIn" /> LinkedIn
+    </a>
+  </div>
+</section>
+
+<script>
+  document.getElementById("contactForm").addEventListener("submit", function(e) {
+    e.preventDefault(); // Prevent form from refreshing the page
+
+    const name = this.name.value;
+
+    // Show simulated success message
+    alert("✅ Thank you, " + name + "! Your message has been submitted successfully.");
+
+    // Reset the form fields
+    this.reset();
+  });
+</script>
+
+
+</body>
+  <footer class="footer">
+  <p>&copy; 2025 Raghav Kumar Jha. All rights reserved.</p>
+  </footer>
+</html>
